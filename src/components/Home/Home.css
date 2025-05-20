@@ -70,7 +70,7 @@
 /* Video container with controlled size */
 .video-wrapper {
   width: 100%;
-  max-width: 600px; /* Control the maximum width of the video */
+  max-width: 600px;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -135,6 +135,21 @@
 }
 
 @media (max-width: 576px) {
+  .content-card h1 {
+    font-size: 2.5rem;
+  }
+
+  .content-card .lead {
+    font-size: 1.2rem;
+  }
+
+  .content-card .info-text {
+    font-size: 0.9rem;
+  }
+
+  .content-card .btn {
+    font-size: 0.9rem;
+  }
   .home-container {
     padding: 1.5rem 0;
   }

@@ -1,5 +1,5 @@
 .bg-cream-def {
-  min-height: 50vh;
+  min-height: 40vh;
   background-color: #fed453;
   display: flex;
   justify-content: center;
@@ -32,15 +32,15 @@
 
 @media (max-width: 576px) {
   .head1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .para1 {
-    font-size: 0.95rem;
+    font-size: 0.7rem;
   }
 
   .bg-cream-def {
-    min-height: 40vh;
+    min-height: 35vh;
     padding: 2rem 1rem;
   }
 }

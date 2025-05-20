@@ -59,7 +59,7 @@ const Header = () => {
               x="0"
               y="46"
               fontWeight="700"
-              fontSize="32"
+              fontSize="34"
               fontFamily="system-ui"
               fill={logoHovered ? "#182922" : "#060a08"}
             >
@@ -67,9 +67,9 @@ const Header = () => {
             </text>
             <text
               x="0"
-              y="75"
+              y="76"
               fontWeight="700"
-              fontSize="32"
+              fontSize="34"
               fontFamily="system-ui"
               fill={logoHovered ? "#182922" : "#060a08"}
             >

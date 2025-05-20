@@ -12,7 +12,7 @@
 }
 
 .footer-text {
-  font-size: 0.65rem; /* Small text */
+  font-size: 0.8rem;
   color: #f0f8ff;
   text-align: left;
 }
@@ -20,16 +20,13 @@
   .footer {
     padding: 6rem 2rem !important;
   }
-  .footer-text {
-    font-size: 0.9rem;
-  }
 }
 @media (max-width: 768px) {
   .footer {
     padding: 2rem 1rem !important;
   }
   .footer-text {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: 500;
   }
 }

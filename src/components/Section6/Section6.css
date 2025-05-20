@@ -1,0 +1,46 @@
+.bg-cream-def {
+  min-height: 45vh;
+  background-color: #fed453;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 1rem;
+  color: rgb(33, 37, 41);
+}
+
+.head1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.para1 {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .head1 {
+    font-size: 1.6rem;
+  }
+
+  .para1 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .head1 {
+    font-size: 1.3rem;
+  }
+
+  .para1 {
+    font-size: 0.95rem;
+  }
+
+  .bg-cream-def {
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+}

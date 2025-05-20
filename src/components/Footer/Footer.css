@@ -1,0 +1,35 @@
+.footer {
+  height: 30vh;
+  background: rgb(33, 37, 41); /* Light gray background */
+  padding: 20px 0;
+  width: 100%;
+}
+.footer .container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-text {
+  font-size: 0.65rem; /* Small text */
+  color: #f0f8ff;
+  text-align: left;
+}
+@media (max-width: 992px) {
+  .footer {
+    padding: 6rem 2rem !important;
+  }
+  .footer-text {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem !important;
+  }
+  .footer-text {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}

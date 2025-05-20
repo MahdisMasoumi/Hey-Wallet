@@ -1,0 +1,145 @@
+.home-container {
+  position: relative;
+  min-height: 85vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 0;
+}
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.home-container .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1600px;
+  padding: 2rem;
+}
+
+.content-card h1 {
+  color: #212529;
+  margin-bottom: 1rem;
+}
+
+.content-card .lead {
+  font-size: 1.5rem;
+  color: #495057;
+  margin-bottom: 1.5rem;
+}
+
+.content-card .info-text {
+  color: #6c757d;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.content-card .btn {
+  font-size: 1.1rem;
+  background-color: #212529;
+  color: aliceblue;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.content-card .btn:hover {
+  background-color: #393b3c;
+  color: aliceblue;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Video column styling */
+.video-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Video container with controlled size */
+.video-wrapper {
+  width: 100%;
+  max-width: 600px; /* Control the maximum width of the video */
+  border-radius: 8px;
+  overflow: hidden;
+}
+.img-fluid {
+  animation: fadeInRight 1s ease-out forwards;
+  opacity: 0;
+  border-radius: 4rem;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 992px) {
+  .video-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .content-card {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 2rem 0;
+  }
+
+  .content-card {
+    padding: 1.5rem;
+  }
+
+  .content-card h1 {
+    font-size: 2.5rem;
+  }
+
+  .content-card .lead {
+    font-size: 1.25rem;
+  }
+
+  .content-card .info-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-container {
+    padding: 1.5rem 0;
+  }
+
+  .content-card {
+    padding: 1.25rem;
+  }
+}

@@ -1,0 +1,146 @@
+.section {
+  background-color: #f0f8ff;
+  color: rgb(33, 37, 41);
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.section__header {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.slider {
+  position: relative;
+  min-height: 200px;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.testimonial {
+  padding: 4rem;
+  background: #f0f8ff;
+  border-radius: 0.8rem;
+}
+
+.testimonial__photo {
+  background-color: rgb(75, 168, 143);
+  width: 7rem;
+  height: 7rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+}
+
+.testimonial-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.carousel .slider__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(33, 37, 41);
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  z-index: 10;
+}
+
+.slider__btn:hover {
+  background-color: rgb(41, 93, 76);
+}
+
+.slider__btn--left {
+  left: 0.5rem;
+}
+
+.slider__btn--right {
+  right: 0.5rem;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .section__header {
+    font-size: 1.5rem;
+  }
+
+  .testimonial {
+    padding: 2rem;
+  }
+
+  .testimonial__photo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .col-sm-9 .testimonial-text {
+    font-size: 0.9rem !important;
+  }
+  .col-sm-9 .testimonial-name {
+    font-size: 0.8rem !important;
+  }
+
+  .carousel .slider__btn {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .slider__btn--left {
+    left: 0;
+  }
+
+  .slider__btn--right {
+    right: 0;
+  }
+}
+
+/* Phones */
+@media (max-width: 576px) {
+  .section {
+    padding: 2rem 0.5rem;
+  }
+
+  .section__header {
+    font-size: 1.2rem;
+  }
+
+  .testimonial {
+    padding: 1.5rem;
+  }
+
+  .testimonial__photo {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.85rem;
+  }
+
+  .testimonial-name {
+    font-size: 0.75rem;
+  }
+
+  .carousel .slider__btn {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}

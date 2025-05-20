@@ -1,0 +1,98 @@
+.header-inner {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fdfdfd;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s ease-in-out;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  height: 4.5rem;
+}
+/* Override Bootstrap container max-width */
+.container-xl.header-width {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header-width {
+  max-width: 1600px;
+}
+.logo-container {
+  width: 8rem;
+  height: 60px; /* Fixed height */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.menu-container {
+  height: 60px; /* Match logo height */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-container .menu-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.menu-text {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: rgb(6, 10, 8);
+  font-family: system-ui;
+}
+.hovered .menu-text {
+  color: rgb(24, 41, 34);
+}
+
+.wave-container {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  position: relative;
+}
+
+.wave-svg {
+  width: 72px;
+  height: 26px;
+  position: absolute;
+  left: 0;
+}
+
+.wave {
+  transition: stroke 0.3s ease;
+}
+
+.hovered .wave {
+  stroke: #74be9e;
+
+  animation: waveAnimation 2s linear infinite;
+  transition: all 0.2s ease-out;
+}
+
+.hovered .wave {
+  animation: waveAnimation 2s linear infinite;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-36px);
+  }
+}

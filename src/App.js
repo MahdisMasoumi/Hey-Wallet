@@ -1,35 +1,25 @@
 import React from "react";
 import "./App.css";
-import { Container, Navbar, Nav } from "react-bootstrap";
-import logo from "./logo.png";
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import Section2 from "./components/Section2/Section2";
+import Section3 from "./components/Section3/Section3";
+import Section4 from "./components/Section4/Section4";
+import Footer from "./components/Footer/Footer";
+import Section5 from "./components/Section5/Section5";
+import Section6 from "./components/Section6/Section6";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar bg="light" expand="lg" sticky="top">
-        <Container>
-          <Navbar.Brand href="#home">
-            <img
-              src={logo}
-              alt="Logo"
-              width="200"
-              height="25"
-              className="d-inline-block align-top"
-            />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link href="#home">Solutions</Nav.Link>
-              <Nav.Link href="#features">About</Nav.Link>
-              <Nav.Link href="#pricing">News & Blog</Nav.Link>
-              <Nav.Link href="#about">Events</Nav.Link>
-              <Nav.Link href="#contact">Careers</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+    <div className="about-page">
+      <Header />
+      <Home />
+      <Section3 />
+      <Section2 />
+      <Section5 />
+      <Section6 />
+      <Section4 />
+      <Footer />
     </div>
   );
 }

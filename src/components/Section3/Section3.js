@@ -29,7 +29,7 @@ const Section3 = () => {
   return (
     <div
       className="container-fluid d-flex justify-content-center align-items-center"
-      style={{ height: "50vh" }}
+      style={{ height: "40vh" }}
     >
       <div className="card-section position-relative">
         {/* Black card */}

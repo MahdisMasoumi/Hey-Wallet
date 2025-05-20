@@ -115,7 +115,7 @@
 /* Phones */
 @media (max-width: 576px) {
   .section {
-    padding: 2rem 0.5rem;
+    padding: 4rem 0.5rem;
   }
 
   .section__header {

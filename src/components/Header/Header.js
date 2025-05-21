@@ -39,7 +39,8 @@ const Header = () => {
 
             {/* Left leaf */}
             <use
-              href="#leaf"
+              use
+              xlinkHref="#leaf"
               x="70"
               y="25"
               width="12"
@@ -51,7 +52,8 @@ const Header = () => {
             {/* Right mirrored leaf */}
             <g transform="translate(140, 0) scale(-1, 1)">
               <use
-                href="#leaf"
+                use
+                xlinkHref="#leaf"
                 x="39"
                 y="19"
                 width="14"

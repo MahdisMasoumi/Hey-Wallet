@@ -25,6 +25,8 @@
   max-width: 1600px;
 }
 .logo-container {
+  overflow: visible;
+  background: rgba(255, 0, 0, 0.1);
   width: 8rem;
   height: 60px;
   cursor: pointer;

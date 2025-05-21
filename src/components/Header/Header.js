@@ -25,10 +25,11 @@ const Header = () => {
           onMouseLeave={() => setLogoHovered(false)}
         >
           <svg
-            viewBox="0 0 300 100"
+            viewBox="0 0 200 80" // Reduced viewBox to focus on the logo
             xmlns="http://www.w3.org/2000/svg"
             className="w-full h-full"
             aria-label="Hey Wallet Logo"
+            preserveAspectRatio="xMinYMin meet" // Ensure content aligns to top-left
           >
             <symbol id="leaf" viewBox="-0.1 -0.1 3.2 3.2">
               <path

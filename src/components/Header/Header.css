@@ -96,4 +96,12 @@
   .header-inner {
     padding: 0.5rem;
   }
+  .logo-container {
+    width: 120px; /* Slightly smaller fixed width */
+    height: 50px;
+  }
+  .logo-container svg {
+    transform: scale(0.9); /* Scale down the SVG slightly */
+    transform-origin: left center;
+  }
 }

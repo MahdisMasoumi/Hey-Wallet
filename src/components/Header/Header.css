@@ -95,3 +95,8 @@
     transform: translateX(-36px);
   }
 }
+@media (max-width: 576px) {
+  .header-inner {
+    padding: 0.5rem;
+  }
+}

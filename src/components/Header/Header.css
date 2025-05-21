@@ -78,13 +78,8 @@
 
 .hovered .wave {
   stroke: #74be9e;
-
   animation: waveAnimation 2s linear infinite;
   transition: all 0.2s ease-out;
-}
-
-.hovered .wave {
-  animation: waveAnimation 2s linear infinite;
 }
 
 @keyframes waveAnimation {

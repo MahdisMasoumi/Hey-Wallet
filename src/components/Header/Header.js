@@ -25,28 +25,43 @@ const Header = () => {
           onMouseLeave={() => setLogoHovered(false)}
         >
           <svg
-            viewBox="0 0 300 150"
+            viewBox="0 0 300 100"
             xmlns="http://www.w3.org/2000/svg"
             className="w-full h-full"
             aria-label="Hey Wallet Logo"
           >
+            <symbol id="leaf" viewBox="-0.1 -0.1 3.2 3.2">
+              <path
+                strokeWidth="0.2"
+                d="m0,0 h1 a2,2 0,0,1 2,2 v1 h-1 a2,2 0,0,1 -2,-2z"
+              />
+            </symbol>
+
             {/* Left leaf */}
-            <path
-              d="m0,0 h1 a2,2 0,0,1 2,2 v1 h-1 a2,2 0,0,1 -2,-2z"
-              transform="translate(70, 25) scale(6)"
+            <use
+              href="#leaf"
+              x="70"
+              y="25"
+              width="12"
+              height="12"
               fill={logoHovered ? "#74be9e" : "#040200"}
               style={{ transition: "all 0.5s ease-out" }}
             />
 
             {/* Right mirrored leaf */}
-            <path
-              d="m0,0 h1 a2,2 0,0,1 2,2 v1 h-1 a2,2 0,0,1 -2,-2z"
-              transform="translate(170, 19) scale(7) scale(-1, 1)"
-              fill={logoHovered ? "#74be9e" : "#040200"}
-              style={{ transition: "all 0.5s ease-out" }}
-            />
+            <g transform="translate(140, 0) scale(-1, 1)">
+              <use
+                href="#leaf"
+                x="39"
+                y="19"
+                width="14"
+                height="14"
+                fill={logoHovered ? "#74be9e" : "#040200"}
+                style={{ transition: "all 0.5s ease-out" }}
+              />
+            </g>
 
-            {/* Text */}
+            {/* Logo Text */}
             <text
               x="0"
               y="46"
@@ -68,10 +83,10 @@ const Header = () => {
               WALLET
             </text>
 
-            {/* Soil mound */}
+            {/* Soil Mound */}
             <path
               d="M70,45 Q85,45 100,45 Q85,35 70,45"
-              fill="#040200"
+              fill={logoHovered ? "#040200" : "#040200"}
               style={{ transition: "all 0.2s ease-out" }}
             />
 

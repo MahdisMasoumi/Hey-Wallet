@@ -16,8 +16,8 @@
 .black-card-stack {
   position: absolute;
   left: 8rem;
-  width: 250px;
-  height: 260px;
+  width: 16rem;
+  height: 16rem;
   border-radius: 28px;
   border: 1px solid #212529;
   background-color: #212529;
@@ -27,24 +27,23 @@
 }
 
 .black-card-image {
-  width: 4rem;
-  height: 4rem;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
 .black-card-heading {
   color: aliceblue;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   font-size: 1.5rem;
 }
 
 .card {
   position: absolute;
-  width: 12rem;
-  height: 12rem;
-  border-radius: 28px;
-  background: #fff;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  width: 14rem;
+  height: 14rem;
+  border-radius: 2rem !important;
+  box-shadow: 0 12px 30px rgba(237, 170, 229, 0.1);
   object-fit: cover;
 }
 

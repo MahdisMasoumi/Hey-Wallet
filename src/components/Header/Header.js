@@ -20,7 +20,7 @@ const Header = () => {
       <div className="container-xl header-width d-flex justify-content-between align-items-center">
         {/* Logo Section */}
         <div
-          className="logo-container svg-wrapper"
+          className="logo-container"
           onMouseEnter={() => setLogoHovered(true)}
           onMouseLeave={() => setLogoHovered(false)}
         >
@@ -30,21 +30,38 @@ const Header = () => {
             className="w-full h-full"
             aria-label="Hey Wallet Logo"
           >
+            <symbol id="leaf" viewBox="-0.1 -0.1 3.2 3.2">
+              <path
+                strokeWidth="0.2"
+                d="m0,0 h1 a2,2 0,0,1 2,2 v1 h-1 a2,2 0,0,1 -2,-2z"
+              />
+            </symbol>
+
             {/* Left leaf */}
-            <path
-              d="m0,0 h1 a2,2 0,0,1 2,2 v1 h-1 a2,2 0,0,1 -2,-2z"
+            <use
+              use
+              xlinkHref="#leaf"
+              x="70"
+              y="25"
+              width="12"
+              height="12"
               fill={logoHovered ? "#74be9e" : "#040200"}
-              transform="translate(70,25) scale(4)"
               style={{ transition: "all 0.5s ease-out" }}
             />
 
             {/* Right mirrored leaf */}
-            <path
-              d="m0,0 h1 a2,2 0,0,1 2,2 v1 h-1 a2,2 0,0,1 -2,-2z"
-              fill={logoHovered ? "#74be9e" : "#040200"}
-              transform="translate(101,19) scale(-4,4)"
-              style={{ transition: "all 0.5s ease-out" }}
-            />
+            <g transform="translate(140, 0) scale(-1, 1)">
+              <use
+                use
+                xlinkHref="#leaf"
+                x="39"
+                y="19"
+                width="14"
+                height="14"
+                fill={logoHovered ? "#74be9e" : "#040200"}
+                style={{ transition: "all 0.5s ease-out" }}
+              />
+            </g>
 
             {/* Logo Text */}
             <text

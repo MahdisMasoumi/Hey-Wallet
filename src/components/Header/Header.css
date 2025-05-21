@@ -26,7 +26,6 @@
 }
 .logo-container {
   overflow: visible;
-  background: rgba(255, 0, 0, 0.1);
   width: 8rem;
   height: 60px;
   cursor: pointer;
@@ -95,13 +94,5 @@
 @media (max-width: 576px) {
   .header-inner {
     padding: 0.5rem;
-  }
-  .logo-container {
-    width: 120px; /* Slightly smaller fixed width */
-    height: 50px;
-  }
-  .logo-container svg {
-    transform: scale(0.9); /* Scale down the SVG slightly */
-    transform-origin: left center;
   }
 }

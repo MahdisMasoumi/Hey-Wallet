@@ -20,7 +20,10 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
-
+.svg-wrapper {
+  transform: translateZ(0);
+  will-change: transform;
+}
 .header-width {
   max-width: 1600px;
 }

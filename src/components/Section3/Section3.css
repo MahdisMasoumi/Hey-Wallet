@@ -1,3 +1,6 @@
+.container-fluid {
+  height: 60vh;
+}
 .card-section {
   background-color: #fdfdfd;
   width: 100%;
@@ -69,6 +72,9 @@
 }
 
 @media (max-width: 576px) {
+  .container-fluid {
+    height: auto;
+  }
   .black-card-stack {
     left: 1rem;
   }

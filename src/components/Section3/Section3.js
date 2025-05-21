@@ -27,10 +27,7 @@ const Section3 = () => {
   }, [step, phase]);
 
   return (
-    <div
-      className="container-fluid d-flex justify-content-center align-items-center"
-      style={{ height: "40vh" }}
-    >
+    <div className="container-fluid d-flex justify-content-center align-items-center">
       <div className="card-section position-relative">
         {/* Black card */}
         <motion.div

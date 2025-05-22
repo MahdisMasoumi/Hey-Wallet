@@ -4,7 +4,9 @@
   background-color: #ffffff;
   color: #212529;
 }
-
+.container {
+  max-width: 1300px;
+}
 .section5-heading {
   font-weight: 600;
   font-size: 2rem;

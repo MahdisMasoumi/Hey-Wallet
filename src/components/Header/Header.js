@@ -125,14 +125,14 @@ const Header = () => {
                   d="M0,6 C3,0 9,12 12,6 C15,0 21,12 24,6 C27,0 33,12 36,6 C39,0 45,12 48,6 C51,0 57,12 60,6 C63,0 69,12 72,6"
                   fill="none"
                   stroke="#555"
-                  strokeWidth="2"
+                  strokeWidth="3"
                 />
                 <path
                   className="wave"
                   d="M0,20 C3,14 9,26 12,20 C15,14 21,26 24,20 C27,14 33,26 36,20 C39,14 45,26 48,20 C51,14 57,26 60,20 C63,14 69,26 72,20"
                   fill="none"
                   stroke="#555"
-                  strokeWidth="2"
+                  strokeWidth="3"
                 />
               </svg>
             </div>

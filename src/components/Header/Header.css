@@ -13,6 +13,10 @@
   padding: 1rem 2.5rem;
   height: 4.5rem;
 }
+.header-inner.scrolled {
+  background-color: rgb(237, 170, 229); /* or any other color */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+}
 .container-xl.header-width {
   max-width: 1400px;
   width: 100%;

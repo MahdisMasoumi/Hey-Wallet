@@ -15,9 +15,9 @@
 
 .black-card-stack {
   position: absolute;
-  left: 8rem;
-  width: 16rem;
-  height: 16rem;
+  left: 5rem;
+  width: 17rem;
+  height: 17rem;
   border-radius: 28px;
   border: 1px solid #212529;
   background-color: #212529;
@@ -40,8 +40,8 @@
 
 .card {
   position: absolute;
-  width: 14rem;
-  height: 14rem;
+  width: 13rem;
+  height: 13rem;
   border-radius: 2rem !important;
   box-shadow: 0 12px 30px rgba(237, 170, 229, 0.1);
   object-fit: cover;
@@ -75,7 +75,7 @@
     height: auto;
   }
   .black-card-stack {
-    left: 1rem;
+    left: 0.8rem;
   }
   .card-section {
     height: 400px;
@@ -87,8 +87,9 @@
   }
 
   .card {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
+    border: 1rem !important;
   }
 
   .black-card-heading {

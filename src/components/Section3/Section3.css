@@ -21,7 +21,7 @@
   border-radius: 28px;
   border: 1px solid #212529;
   background-color: #212529;
-  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 40px rgba(237, 170, 229, 0.2);
   z-index: 10;
   padding: 1rem;
 }
@@ -84,7 +84,7 @@
   }
   .black-card-stack {
     padding: 0.5rem;
-
+    border-radius: 1rem;
     left: 0.8rem;
   }
   .card-section {
@@ -99,10 +99,10 @@
   .card {
     width: 6rem;
     height: 6rem;
-    border: 1rem !important;
+    border-radius: 0.5rem !important;
   }
 
   .black-card-heading {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 }

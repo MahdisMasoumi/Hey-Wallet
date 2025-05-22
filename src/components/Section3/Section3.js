@@ -71,8 +71,8 @@ const Section3 = () => {
                 isReturning
                   ? { x: -300, opacity: 0, scale: 0.5 }
                   : i === step
-                  ? { x: 120, opacity: 1, scale: 1, zIndex: 10 }
-                  : { x: 110, opacity: 0.3, scale: 0.9, zIndex: 1 }
+                  ? { x: 100, opacity: 1, scale: 1, zIndex: 10 }
+                  : { x: 90, opacity: 0.3, scale: 0.9, zIndex: 1 }
               }
               transition={{ duration: 0.8 }}
               style={{ position: "absolute" }}
